@@ -3,7 +3,7 @@ import ResearchRepository from "@/components/research/research-repository";
 export default function ResearchPage() {
   return (
     <div className="flex flex-col justify-center items-center align-center">
-      <div className="bg-muted/50 border-b">
+      <div className="border-b">
         <div className="container py-10">
           <h1 className="text-3xl font-bold tracking-tight mb-1">Research Repository</h1>
           <p className="text-muted-foreground">

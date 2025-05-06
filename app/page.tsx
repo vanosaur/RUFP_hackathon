@@ -171,23 +171,7 @@ export default function Home() {
         </div>
       </section>
       
-      {/* CTA Section */}
-      <section className="py-12 md:py-20 bg-primary text-primary-foreground">
-        <div className="container px-4 md:px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight mb-6">Join Our Initiative</h2>
-          <p className="md:text-lg mb-8 max-w-2xl mx-auto">
-            Help us create a healthier digital future for Indian teenagers. Access our resources, contribute to research, or implement intervention strategies.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/dashboard">Explore Data</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground hover:bg-primary-foreground/10">
-              <Link href="/contact">Get Involved</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }

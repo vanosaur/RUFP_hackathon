@@ -2,11 +2,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CLDEditor from "@/components/cld/cld-editor";
 import SystemNarrative from "@/components/cld/system-narrative";
 import CLDExamples from "@/components/cld/cld-examples";
+import { SystemArchtypes } from "@/components/systems_archetype";
 
 export default function CLDPage() {
   return (
     <div className="flex flex-col justify-center items-center align-center">
-      <div className="bg-muted/50 border-b">
+      <div className="border-b">
         <div className="container py-10">
           <h1 className="text-3xl font-bold tracking-tight mb-1">Causal Loop Diagram Analysis</h1>
           <p className="text-muted-foreground">
@@ -44,6 +45,9 @@ export default function CLDPage() {
             </div>
           </TabsContent>
         </Tabs>
+        <div className="mt-12">
+        <SystemArchtypes />
+      </div>
       </div>
     </div>
   );

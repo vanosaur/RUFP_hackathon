@@ -19,19 +19,12 @@ const fetchScreenTimeData = async () => {
   await new Promise(resolve => setTimeout(resolve, 500));
   
   return [
-    { year: "2020-Q1", screenTime: 4.1, socialMedia: 1.8, gaming: 1.2, educational: 1.1 },
-    { year: "2020-Q2", screenTime: 4.5, socialMedia: 2.0, gaming: 1.3, educational: 1.2 },
-    { year: "2020-Q3", screenTime: 4.8, socialMedia: 2.2, gaming: 1.4, educational: 1.2 },
-    { year: "2020-Q4", screenTime: 5.0, socialMedia: 2.3, gaming: 1.5, educational: 1.2 },
-    { year: "2021-Q1", screenTime: 5.3, socialMedia: 2.5, gaming: 1.6, educational: 1.2 },
-    { year: "2021-Q2", screenTime: 5.6, socialMedia: 2.7, gaming: 1.7, educational: 1.2 },
-    { year: "2021-Q3", screenTime: 5.9, socialMedia: 2.9, gaming: 1.8, educational: 1.2 },
-    { year: "2021-Q4", screenTime: 6.2, socialMedia: 3.0, gaming: 2.0, educational: 1.2 },
-    { year: "2022-Q1", screenTime: 6.4, socialMedia: 3.1, gaming: 2.1, educational: 1.2 },
-    { year: "2022-Q2", screenTime: 6.6, socialMedia: 3.2, gaming: 2.2, educational: 1.2 },
-    { year: "2022-Q3", screenTime: 6.8, socialMedia: 3.3, gaming: 2.3, educational: 1.2 },
-    { year: "2022-Q4", screenTime: 7.0, socialMedia: 3.4, gaming: 2.4, educational: 1.2 },
-    { year: "2023-Q1", screenTime: 7.2, socialMedia: 3.5, gaming: 2.5, educational: 1.2 },
+    { year: "Q3-2018", screenTime: 6.48, socialMedia: 2.6, gaming: 2.5, educational: 1.2 },
+    { year: "Q3-2019", screenTime: 6.38, socialMedia: 2.9, gaming: 2.2, educational: 1.2 },
+    { year: "Q3-2020", screenTime: 6.54, socialMedia: 3.0, gaming: 2.3, educational: 1.2 },
+    { year: "Q3-2021", screenTime: 6.58, socialMedia: 3.1, gaming: 2.2, educational: 1.2 },
+    { year: "Q3-2022", screenTime: 6.36, socialMedia: 3.2, gaming: 1.9, educational: 1.2 },
+    { year: "Q3-2023", screenTime: 6.40, socialMedia: 3.3, gaming: 1.9, educational: 1.2 },
   ];
 };
 

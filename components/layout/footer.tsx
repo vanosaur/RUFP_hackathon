@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="py-8  ml-24 mr-24 border-t">
-      <div className="container grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="space-y-3">
           <h3 className="text-lg font-semibold">Digital Wellbeing Initiative</h3>
           <p className="text-sm text-muted-foreground">
@@ -24,22 +24,12 @@ export default function Footer() {
         <div>
           <h4 className="font-medium mb-3">Resources</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link href="/resources" className="hover:text-primary">For Parents</Link></li>
-            <li><Link href="/resources/educators" className="hover:text-primary">For Educators</Link></li>
-            <li><Link href="/resources/policymakers" className="hover:text-primary">For Policymakers</Link></li>
-            <li><Link href="/resources/therapists" className="hover:text-primary">For Therapists</Link></li>
+            <li>From Articles</li>
+            <li>From Wikipedia</li>
+            <li>From Chatgpt,Gemini</li>
           </ul>
         </div>
-        
-        <div>
-          <h4 className="font-medium mb-3">Legal</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
-            <li><Link href="/terms" className="hover:text-primary">Terms of Service</Link></li>
-            <li><Link href="/data" className="hover:text-primary">Data Sources</Link></li>
-            <li><Link href="/contact" className="hover:text-primary">Contact Us</Link></li>
-          </ul>
-        </div>
+
       </div>
       
       <div className="container mt-8 pt-4 border-t text-sm text-muted-foreground">

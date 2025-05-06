@@ -13,7 +13,8 @@ const navItems = [
   { name: "Dashboard", href: "/dashboard", icon: LineChart },
   { name: "Research", href: "/research", icon: Book },
   { name: "CLD Analysis", href: "/cld", icon: Share2 },
-  { name: "Interventions", href: "/interventions", icon: Lightbulb },
+  { name: "EPS & Leverage", href: "/interventions", icon: Lightbulb },
+  { name: "Solutions", href: "/solutions", icon: Lightbulb },
 ];
 
 export default function Navbar() {
