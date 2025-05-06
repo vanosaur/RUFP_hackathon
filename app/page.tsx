@@ -16,68 +16,70 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-background to-muted/50">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  Reversing Screen Addiction in Indian Teenagers
-                </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  A data-driven approach to understanding and addressing the growing crisis of digital dependence among India's youth.
-                </p>
-              </div>
-              <div className="flex flex-col md:flex-row gap-2 md:gap-4">
-                <Button asChild size="lg" className="gap-1">
-                  <Link href="/dashboard">
-                    Explore Data <ArrowRight className="h-4 w-4 ml-1" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link href="/research">View Research</Link>
-                </Button>
-              </div>
-            </div>
-            <div className="relative flex items-center justify-center">
-              <div className="relative w-full h-[300px] md:h-[400px] bg-muted rounded-lg overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                  <div className="grid grid-cols-2 gap-4 p-6">
-                    <div className="relative bg-card p-4 rounded-lg shadow-sm border">
-                      <h3 className="font-medium flex items-center gap-2">
-                        <Smartphone className="h-4 w-4" /> Daily Screen Time
-                      </h3>
-                      <p className="text-3xl font-bold mt-2">7.2 hrs</p>
-                      <p className="text-xs text-muted-foreground mt-1">Indian teenagers (avg.)</p>
-                    </div>
-                    <div className="relative bg-card p-4 rounded-lg shadow-sm border">
-                      <h3 className="font-medium flex items-center gap-2">
-                        <Users className="h-4 w-4" /> Addiction Rate
-                      </h3>
-                      <p className="text-3xl font-bold mt-2">43%</p>
-                      <p className="text-xs text-muted-foreground mt-1">Of urban youth</p>
-                    </div>
-                    <div className="relative bg-card p-4 rounded-lg shadow-sm border">
-                      <h3 className="font-medium flex items-center gap-2">
-                        <Clock className="h-4 w-4" /> Social Media
-                      </h3>
-                      <p className="text-3xl font-bold mt-2">3.5 hrs</p>
-                      <p className="text-xs text-muted-foreground mt-1">Daily average</p>
-                    </div>
-                    <div className="relative bg-card p-4 rounded-lg shadow-sm border">
-                      <h3 className="font-medium flex items-center gap-2">
-                        <Brain className="h-4 w-4" /> Mental Health
-                      </h3>
-                      <p className="text-3xl font-bold mt-2">67%</p>
-                      <p className="text-xs text-muted-foreground mt-1">Report anxiety</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section className="w-full py-12 md:py-24 lg:py-32">
+  <div className="container px-4 md:px-6 max-w-5xl mx-auto">
+    <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+      {/* Left column - Text */}
+      <div className="flex flex-col justify-center space-y-4">
+        <div className="space-y-2">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-balance">
+            Reversing Screen Addiction in Indian Teenagers
+          </h1>
+          <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+            A data-driven approach to understanding and addressing the growing crisis of digital dependence among India's youth.
+          </p>
         </div>
-      </section>
+        <div className="flex flex-col gap-2 min-[400px]:flex-row">
+          <Link
+            href="/dashboard"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-black px-8 text-sm font-medium text-white shadow transition-colors hover:bg-gray-800 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-black disabled:pointer-events-none disabled:opacity-50 dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:focus-visible:ring-white"
+          >
+            Explore Data
+          </Link>
+          <Link
+            href="/research"
+            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+          >
+            View Research
+          </Link>
+        </div>
+      </div>
+
+      {/* Right column - Cards */}
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div className="rounded-lg border bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
+          <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+            📱 Daily Screen Time
+          </div>
+          <div className="text-2xl font-bold">7.2 hrs</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400">Indian teenagers (avg.)</div>
+        </div>
+        <div className="rounded-lg border bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
+          <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+            🧠 Addiction Rate
+          </div>
+          <div className="text-2xl font-bold">43%</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400">Of urban youth</div>
+        </div>
+        <div className="rounded-lg border bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
+          <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+            ⏰ Social Media
+          </div>
+          <div className="text-2xl font-bold">3.5 hrs</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400">Daily average</div>
+        </div>
+        <div className="rounded-lg border bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-950">
+          <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+            🧬 Mental Health
+          </div>
+          <div className="text-2xl font-bold">67%</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400">Report anxiety</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Features Section */}
       <section className="py-12 md:py-16 bg-background">
