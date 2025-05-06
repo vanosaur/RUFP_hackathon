@@ -1,0 +1,57 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="border-t border-border py-8 bg-muted/40">
+      <div className="container grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="space-y-3">
+          <h3 className="text-lg font-semibold">Digital Wellbeing Initiative</h3>
+          <p className="text-sm text-muted-foreground">
+            Analyzing and addressing screen addiction among Indian teenagers through research, data, and intervention strategies.
+          </p>
+        </div>
+        
+        <div>
+          <h4 className="font-medium mb-3">Platform</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link href="/dashboard" className="hover:text-primary">Dashboard</Link></li>
+            <li><Link href="/research" className="hover:text-primary">Research</Link></li>
+            <li><Link href="/cld" className="hover:text-primary">CLD Analysis</Link></li>
+            <li><Link href="/interventions" className="hover:text-primary">Interventions</Link></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 className="font-medium mb-3">Resources</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link href="/resources" className="hover:text-primary">For Parents</Link></li>
+            <li><Link href="/resources/educators" className="hover:text-primary">For Educators</Link></li>
+            <li><Link href="/resources/policymakers" className="hover:text-primary">For Policymakers</Link></li>
+            <li><Link href="/resources/therapists" className="hover:text-primary">For Therapists</Link></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 className="font-medium mb-3">Legal</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-primary">Terms of Service</Link></li>
+            <li><Link href="/data" className="hover:text-primary">Data Sources</Link></li>
+            <li><Link href="/contact" className="hover:text-primary">Contact Us</Link></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div className="container mt-8 pt-4 border-t text-sm text-muted-foreground">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p>© {new Date().getFullYear()} Digital Wellbeing Initiative. All rights reserved.</p>
+          <div className="flex gap-4">
+            <Link href="/privacy" className="hover:text-primary">Privacy</Link>
+            <Link href="/terms" className="hover:text-primary">Terms</Link>
+            <Link href="/contact" className="hover:text-primary">Contact</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
