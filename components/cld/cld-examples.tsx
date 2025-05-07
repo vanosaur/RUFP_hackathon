@@ -20,7 +20,7 @@ export default function CLDExamples() {
             
             <div className="relative border rounded-lg bg-background p-2 min-h-[400px] mb-4">
               <img 
-                src="https://images.pexels.com/photos/8325060/pexels-photo-8325060.jpeg" 
+                src="/CLD.jpg"
                 alt="Social Media CLD Example" 
                 className="w-full h-[400px] object-contain rounded"
               />
